@@ -2,20 +2,56 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PopoverViewController" customModule="focusmusic_fm" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="webView" destination="aV5-mc-CSU" id="XcK-yR-Olb"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="764" height="614"/>
+            <rect key="frame" x="0.0" y="0.0" width="660" height="614"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <point key="canvasLocation" x="282" y="325"/>
+            <subviews>
+                <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aV5-mc-CSU">
+                    <rect key="frame" x="0.0" y="0.0" width="660" height="614"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-8N-Tsj">
+                    <rect key="frame" x="620" y="574" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="71N-M0-MIn"/>
+                        <constraint firstAttribute="width" constant="30" id="RYA-1G-7dA"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" title="Textured Rounded" bezelStyle="rounded" image="NSRefreshFreestandingTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="Ncs-BX-q5Q">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="reload:" target="-2" id="PjN-X9-R2b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="aV5-mc-CSU" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="5R5-Ah-zOp"/>
+                <constraint firstAttribute="trailing" secondItem="aV5-mc-CSU" secondAttribute="trailing" id="Bit-g9-ggF"/>
+                <constraint firstAttribute="trailing" secondItem="hYk-8N-Tsj" secondAttribute="trailing" constant="10" id="H4F-fE-W77"/>
+                <constraint firstItem="aV5-mc-CSU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="KuW-Va-8dF"/>
+                <constraint firstItem="hYk-8N-Tsj" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="Nb9-Kn-0H4"/>
+                <constraint firstAttribute="bottom" secondItem="aV5-mc-CSU" secondAttribute="bottom" id="WLr-3P-r7c"/>
+            </constraints>
+            <point key="canvasLocation" x="230" y="325"/>
         </customView>
     </objects>
+    <resources>
+        <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
+    </resources>
 </document>

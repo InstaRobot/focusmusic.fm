@@ -13,6 +13,7 @@
 		505AABCE2439CFCC00FEBA4C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */; };
 		505AABCF2439CFCC00FEBA4C /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505AABCD2439CFCC00FEBA4C /* PopoverViewController.xib */; };
 		505AABD12439D01700FEBA4C /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AABD02439D01700FEBA4C /* EventMonitor.swift */; };
+		505AABD42439D10C00FEBA4C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505AABD32439D10C00FEBA4C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		505AABCD2439CFCC00FEBA4C /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		505AABD02439D01700FEBA4C /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		505AABD32439D10C00FEBA4C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505AABD42439D10C00FEBA4C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				505AABBC2439CD3200FEBA4C /* focusmusic.fm */,
 				505AABBB2439CD3200FEBA4C /* Products */,
+				505AABD22439D10C00FEBA4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +61,8 @@
 		505AABBC2439CD3200FEBA4C /* focusmusic.fm */ = {
 			isa = PBXGroup;
 			children = (
-				505AABBD2439CD3200FEBA4C /* AppDelegate.swift */,
 				505AABCB2439CFB700FEBA4C /* Popover */,
+				505AABBD2439CD3200FEBA4C /* AppDelegate.swift */,
 				505AABBF2439CD3300FEBA4C /* Assets.xcassets */,
 				505AABC12439CD3300FEBA4C /* MainMenu.xib */,
 				505AABC42439CD3300FEBA4C /* Info.plist */,
@@ -75,6 +79,14 @@
 				505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */,
 			);
 			path = Popover;
+			sourceTree = "<group>";
+		};
+		505AABD22439D10C00FEBA4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505AABD32439D10C00FEBA4C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
