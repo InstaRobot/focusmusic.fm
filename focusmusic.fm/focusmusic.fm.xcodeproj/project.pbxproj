@@ -10,6 +10,9 @@
 		505AABBE2439CD3200FEBA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AABBD2439CD3200FEBA4C /* AppDelegate.swift */; };
 		505AABC02439CD3300FEBA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505AABBF2439CD3300FEBA4C /* Assets.xcassets */; };
 		505AABC32439CD3300FEBA4C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505AABC12439CD3300FEBA4C /* MainMenu.xib */; };
+		505AABCE2439CFCC00FEBA4C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */; };
+		505AABCF2439CFCC00FEBA4C /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505AABCD2439CFCC00FEBA4C /* PopoverViewController.xib */; };
+		505AABD12439D01700FEBA4C /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505AABD02439D01700FEBA4C /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		505AABC22439CD3300FEBA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		505AABC42439CD3300FEBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505AABC52439CD3300FEBA4C /* focusmusic_fm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = focusmusic_fm.entitlements; sourceTree = "<group>"; };
+		505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		505AABCD2439CFCC00FEBA4C /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		505AABD02439D01700FEBA4C /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +58,23 @@
 			isa = PBXGroup;
 			children = (
 				505AABBD2439CD3200FEBA4C /* AppDelegate.swift */,
+				505AABCB2439CFB700FEBA4C /* Popover */,
 				505AABBF2439CD3300FEBA4C /* Assets.xcassets */,
 				505AABC12439CD3300FEBA4C /* MainMenu.xib */,
 				505AABC42439CD3300FEBA4C /* Info.plist */,
 				505AABC52439CD3300FEBA4C /* focusmusic_fm.entitlements */,
+				505AABD02439D01700FEBA4C /* EventMonitor.swift */,
 			);
 			path = focusmusic.fm;
+			sourceTree = "<group>";
+		};
+		505AABCB2439CFB700FEBA4C /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				505AABCD2439CFCC00FEBA4C /* PopoverViewController.xib */,
+				505AABCC2439CFCC00FEBA4C /* PopoverViewController.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +137,7 @@
 			files = (
 				505AABC02439CD3300FEBA4C /* Assets.xcassets in Resources */,
 				505AABC32439CD3300FEBA4C /* MainMenu.xib in Resources */,
+				505AABCF2439CFCC00FEBA4C /* PopoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505AABD12439D01700FEBA4C /* EventMonitor.swift in Sources */,
+				505AABCE2439CFCC00FEBA4C /* PopoverViewController.swift in Sources */,
 				505AABBE2439CD3200FEBA4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
