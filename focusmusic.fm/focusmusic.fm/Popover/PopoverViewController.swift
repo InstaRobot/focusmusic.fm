@@ -24,6 +24,7 @@ class PopoverViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView.alphaValue = 0.8
         if let url = URL(string: "https://focusmusic.fm") {
             let request = URLRequest(url: url)
             webView.load(request)
