@@ -1,2 +1,4 @@
 # focusmusic.fm
-Desktop wrapper for this service: https://focusmusic.fm
+Desktop wrapper app for service: https://focusmusic.fm
+
+![preview](https://funkyimg.com/i/33EZE.png)
